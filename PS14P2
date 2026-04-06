@@ -1,0 +1,38 @@
+#PS14P2
+#Alexander W Kazantzis
+#4-6-26
+
+#Define the class
+class Student:
+    #Use pass to leave empty for the moment
+    def __init__(self,FstNme,LstNme,CrdHrs,Dsct_Code):
+        self.FstNme = FstNme
+        self.LstNme = LstNme
+        self.CrdHrs = CrdHrs
+        self.Dsct_Code = Dsct_Code
+    def PrCrdHrs(self,Dsct_Code):
+        if StuDt1.Dsct_Code == 'I':
+            return int(250.00)
+        elif StuDt1.Dsct_Code == 'O':
+            return int(500.00)
+        else:
+            return "Enter either I or O"
+    def TuitDue(self,CrdHrs,PrCrdHrs):
+        TD = float(StuDt1.PrCrdHrs(Dsct_Code)) * float(StuDt1.CrdHrs)
+        return TD
+#Inputs
+FstNme = input("Enter Student's First Name: ")
+LstNme = input("Enter Student's Last Name: ")
+CrdHrs = int(input("Enter Enrolled Credits: "))
+Dsct_Code = (input("Enter Distrct code (I/O): "))
+
+#Instantitate the Object
+StuDt1 = Student(FstNme,LstNme,CrdHrs,Dsct_Code)
+
+
+#outputs
+print("Student's First Name: ", StuDt1.FstNme)
+print("Student's last Name: ",StuDt1.LstNme)
+print("Credit hours Enrolled: ",StuDt1.CrdHrs)
+print("District Code: ",StuDt1.Dsct_Code)
+print("Tuition Due: $",StuDt1.TuitDue(StuDt1.CrdHrs,StuDt1.PrCrdHrs(Dsct_Code)))
