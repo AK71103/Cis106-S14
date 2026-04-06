@@ -1,0 +1,31 @@
+#PS14P1 
+#Alexander W Kazantzis
+#4-6-26
+
+#Define the class
+class Employee:
+    #Use pass to leave empty for the moment
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.BnsRte = (input("Enter rate of bonus: "))
+        self.Email = first +'.'+ last + '@company.com'
+    #self.rate = 0.00
+    #define the bonus
+    def EmpBns(self,BnsRte):
+        B = (float((self.BnsRte))/100) * float(self.pay)
+        return B
+    def TotPay(self, EmpBns):
+        T = int(Empl1.EmpBns(Empl1.BnsRte)) + int(self.pay)
+        return T
+#Instantitate the Object
+Empl1 = Employee('Frank', 'Alvino',60000.00)
+
+#Use the Object
+print(Empl1.Email)
+print(Empl1.first)
+print(Empl1.last)
+print(Empl1.pay)
+print (f"{Empl1.BnsRte}%")
+print(Empl1.EmpBns(Empl1.BnsRte))
