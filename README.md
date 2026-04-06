@@ -9,6 +9,6 @@ Demonstrate this method works by entering a bonus rate and displaying the bonus.
 2. Create a student class. This class should consist of student first name, student last name,
 district code (I or O) and enrolled credits. Create a method to compute tuition owed. Tuition owed
 should be enrolled credits times $250.00 per credit hour for in district students (district code of I)
-and or times $500.00 per credit hour for out of district students (district code of anythingother than I).
+and or times $500.00 per credit hour for out of district students (district code of anything other than I).
  Test the class by instantiating the object and adding data.
 
